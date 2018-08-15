@@ -1,7 +1,5 @@
 <template>
     <div class="header" @click="toTop">
-        <!-- 利用slot来传值 不用属性传值 -->
-        <!-- 该用属性传值的控制返回按钮是否显示 -->
         <slot></slot>
         <i v-if="back" class="iconfont icon-fanhui" @click="goBack"></i>
     </div>

@@ -29,7 +29,7 @@ export default {
     .footer{
         position: fixed;
         bottom: 0px;
-        left: 0px; //至此会导致脱离文档流，高度塌陷，所以加上width:100%
+        left: 0px;
         width: 100%;
         height: 50px;
         display: flex;

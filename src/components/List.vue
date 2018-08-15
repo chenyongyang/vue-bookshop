@@ -12,7 +12,7 @@
                         <b>{{ book.bookPrice }}</b>
                         <div class="btn-list">
                             <button @click.stop="remove(book.bookId)">删除</button>
-                            <button>添加</button>
+                            <button @click.stop="addCart(book)">添加</button>
                         </div>
                     </div>                   
                 </router-link>
@@ -93,6 +93,9 @@ export default {
         Head,Dialog
     },
     methods:{
+        addCart(book){
+            this.$store.commit('addCart',book);
+        },
         async getData(){
             if(this.hasMore && !this.isLoading){
                 this.isLoading = true;

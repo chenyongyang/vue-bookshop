@@ -20,28 +20,20 @@ export default {
     created(){ 
     },
     mounted(){
-        // 初始化swiper的操作，实际上是操作dom，需要等待dom渲染完毕，因此不能放在created
         let mySwiper = new Swiper ('.swiper-container', {
-            // Optional parameters
             direction: 'horizontal',
             loop: true,
             autoplay:{
                 delay: 500
             },
-            // If we need pagination
             pagination: {
                 el: '.swiper-pagination',
             },
-
-            // Navigation arrows
             navigation: {
                 nextEl: '.swiper-button-next',
                 prevEl: '.swiper-button-prev',
             }
         })
-    },
-    data(){
-        return {}
     }
 }
 </script>

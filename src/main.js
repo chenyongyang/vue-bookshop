@@ -23,9 +23,12 @@ router.beforeEach(function(to, from, next) {
     next();
 });
 
+import store from './store';
+
 new Vue({
     el: '#app',
     router,
+    store,
     components: { App },
     template: '<App/>'
 })

@@ -9,7 +9,7 @@
 
 <script>
   export default {
-    props:['swiperSlides'], // 轮播图片来源从页面级组件获取
+    props:['swiperSlides'],
     name: 'carousel',
     data() {
       return {
@@ -24,9 +24,6 @@
           observeParents: true
         }
       }
-    },
-    mounted() {
-      
     }
   }
 </script>
